@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+<style>
+#bts{
+   background-color:#E6E56E6;
+}
+#bto{
+   background-color:#F77E39;
+}
+#btb{
+   background-color:#48547E;
+}
+.btscolor{
+   width:40;
+   height:40;
+   border: 2px solid #CCCCCC;
+   border-radius: 20px;
+}
+</style>
+
+<script>
+function showColor(cid){
+   if (cid==1) {
+      document.getElementById("iphonecolor").innerHTML="銀色";
+      document.getElementById("iphonephoto").setAttribute("src","iphone17s.jpg");
+   }
+   else if (cid==2) {
+      document.getElementById("iphonecolor").innerHTML="宇宙橙色";
+      document.getElementById("iphonephoto").setAttribute("src","iphone17o.jpg");
+   }
+   else {
+      document.getElementById("iphonecolor").innerHTML="藏藍色";
+      document.getElementById("iphonephoto").setAttribute("src","iphone17b.jpg");
+   } 
+}
+</script>
+
+</head>
+
+<body bgcolor="#F5F5F7">
+
+<center>
+
+<h1 style="color:#ff0000;">選你喜歡的顏色</h1>
+
+<div id="iphonecolor">？</div>
+
+<img id="iphonephoto" src="iphone17pro.jpg" height="400"><br>
+
+<input type="button" id="bts" class="btscolor" onclick="javascript:{showColor(1);}"></input>
+<input type="button" id="bto" class="btscolor" onclick="javascript:{showColor(2);}"></input>
+<input type="button" id="btb" class="btscolor" onclick="javascript:{showColor(3);}"></input>
+
+</center>
+
+</body>
+
+</html>
